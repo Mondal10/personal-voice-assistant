@@ -1,0 +1,40 @@
+{
+  "name": "personal-voice-assistant",
+  "version": "1.0.0",
+  "description": "Basic speech to text and some extra functionality",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf dist",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --entry ./src/javascript/index.js --output-filename ./dist/bundle.js",
+    "start": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mondal10/personal-voice-assistant.git"
+  },
+  "keywords": [
+    "assistant",
+    "voice",
+    "personal"
+  ],
+  "author": "Amit Mondal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mondal10/personal-voice-assistant/issues"
+  },
+  "homepage": "https://github.com/Mondal10/personal-voice-assistant#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
