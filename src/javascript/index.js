@@ -1,2 +1,7 @@
 import '../css/main.css';
-console.log('%c Hello There', 'color:lightgreen;')
+import { init } from './modules/initialize';
+
+window.onload = () => {
+    console.log('%c Loaded', 'color:lightgreen;')
+    init();
+}

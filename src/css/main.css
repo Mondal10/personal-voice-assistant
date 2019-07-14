@@ -1,3 +1,4 @@
-@import './modules/body.css';
-@import './modules/note-words.css';
-@import './modules/button.css';
+@import './components/body.css';
+@import './components/header.css';
+@import './components/note-words.css';
+@import './components/button.css';
