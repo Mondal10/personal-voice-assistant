@@ -1,8 +1,3 @@
-// Webpack uses this to work with directories
-// const webpack = require('webpack');
-
-// Used to generate HTML5 file that includes all webpack bundles in script tag.
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 // This is our Configuration object.
@@ -28,24 +23,9 @@ const config = {
                         presets: ['@babel/preset-env']
                     }
                 }
-            },
-            {
-                // Rule for CSS
-                test: /\.css$/,
-                use: [
-                    'style-loader', // 2. Injects styles into DOM
-                    'css-loader' // 1. Turns CSS into commonJS
-                ]
             }
         ]
-    },
-
-    // Plugins
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./src/index.html" // Pass the path of index file which act as template
-        })
-    ]
+    }
 }
 
 // Exporting the config.
