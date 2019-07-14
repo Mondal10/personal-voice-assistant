@@ -1,0 +1,28 @@
+.btn-holder {
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.square-btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    /* text-decoration: none; */
+    color: #FFF;
+    background: #fd9535;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    font-size: 16px;
+    border: solid 2px #d27d00;
+}
+
+.square-btn:active {/*on Click*/
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+.square-btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
