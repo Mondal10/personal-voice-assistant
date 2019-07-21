@@ -38,11 +38,13 @@ export const speech = () => {
 
         console.log(transcript);
     });
-    console.log(recognition, stopBtn)
-    // When there is a long pause the speech recognition stops, 
+
+    // When there is a long pause the speech recognition stops (Default configuration of API), 
     // so we need to start again when end.
-    speakingFinished ? null : recognition.addEventListener('end', recognition.start);
-    console.log(speakingFinished);
+    recognition.addEventListener('end', () => {
+        speakingFinished ? recognition.stop() : recognition.start();
+    });
+
     speakBtn.addEventListener('click', () => {
         speakingFinished = false;
         recognition.start();
