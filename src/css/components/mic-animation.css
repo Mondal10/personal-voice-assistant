@@ -1,0 +1,41 @@
+/*SVG styling*/
+.svg-holder {
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #f44336;
+    margin: auto;
+}
+  
+.svg-mic {
+    fill: white;
+}
+  
+.svg-mic:hover {
+    fill: black;
+}
+  
+/*Pulse Animation*/
+.anim-pulse {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+  
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
