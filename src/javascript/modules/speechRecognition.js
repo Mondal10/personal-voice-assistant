@@ -1,3 +1,5 @@
+import { AnimateMic } from './animateMic';
+
 /**
  * Speech Recognition code
  */
@@ -8,6 +10,8 @@ export const speech = () => {
 
     const speakBtn = document.querySelector('.speak-btn');
     const stopBtn = document.querySelector('.stop-btn');
+
+    const micIcon = document.querySelector('.svg-holder');
 
     recognition.interimResults = true;
     recognition.lang = 'en-US';
@@ -48,11 +52,12 @@ export const speech = () => {
     speakBtn.addEventListener('click', () => {
         speakingFinished = false;
         recognition.start();
+        AnimateMic.start(micIcon);
     });
 
-    // Stop Button Not working Need to work on it
     stopBtn.addEventListener('click', () => {
         speakingFinished = true;
         recognition.stop();
+        AnimateMic.stop(micIcon);
     });
 }
