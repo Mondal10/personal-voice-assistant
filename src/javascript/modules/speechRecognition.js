@@ -40,7 +40,7 @@ export const speech = () => {
         const poopScript = transcript.replace(/poop|poo|shit|dump|unicorn/gi, '💩');
         paragraph.textContent = poopScript;
 
-        console.log(transcript);
+        // console.log(transcript);
     });
 
     // When there is a long pause the speech recognition stops (Default configuration of API), 
@@ -53,11 +53,15 @@ export const speech = () => {
         speakingFinished = false;
         recognition.start();
         AnimateMic.start(micIcon);
+        speakBtn.classList.add('disabled');
+        stopBtn.classList.remove('disabled');
     });
 
     stopBtn.addEventListener('click', () => {
         speakingFinished = true;
         recognition.stop();
         AnimateMic.stop(micIcon);
+        speakBtn.classList.remove('disabled');
+        stopBtn.classList.add('disabled');
     });
 }

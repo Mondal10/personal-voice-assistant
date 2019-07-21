@@ -17,12 +17,17 @@
     border: none;
 }
 
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
 .square-btn:active {/*on Click*/
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
 
 .square-btn:hover{
-    opacity: 0.7;
+    opacity: 0.9;
     cursor: pointer;
 }
 
