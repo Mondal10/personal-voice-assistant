@@ -6,7 +6,7 @@ export class AnimateMic {
 
     /**
      * Start animation
-     * @param {element}
+     * @param {HTMLElement} element
      */
     static start(element) {
         element.classList.add('anim-pulse');
@@ -14,7 +14,7 @@ export class AnimateMic {
 
     /**
      * Stop animation
-     * @param {element}
+     * @param {HTMLElement} element
      */
     static stop(element) {
         element.classList.remove('anim-pulse');
