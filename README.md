@@ -1,12 +1,15 @@
 <p align="center">
-  <img  alt="make it dark" height="256px" width="256px" src="https://raw.githubusercontent.com/Mondal10/personal-voice-assistant/master/src/images/mic.png">
+  <img  alt="make it dark" height="128px" width="128px" src="https://raw.githubusercontent.com/Mondal10/personal-voice-assistant/master/src/images/mic.png">
 </p>
 <h1 align="center"><a href="https://mondal10.github.io/personal-voice-assistant/">Personal Voice Assistant</a></h1>
 
-Just a self learning project to implement Webpack. 
+A self learning project to implement Webpack and Browser's Speech Recognition for Text to Speech conversion.
 
 ## Objective
-
+- Configuring Webpack for different environments(dev, prod).
+- Merging webpack files with the common file.
+- Minifying HTML, JS and CSS.
+- Using browser's `Speech recognition` to convert Speech to Text
 
 ## More features are left to be introduced
 Reference links:
