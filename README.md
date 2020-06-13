@@ -13,5 +13,5 @@ A self learning project to implement Webpack and Browser's Speech Recognition fo
 
 ## More features are left to be introduced
 Reference links:
-https://alligator.io/js/copying-to-clipboard/
-https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+- https://alligator.io/js/copying-to-clipboard/
+- https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
