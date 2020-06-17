@@ -3,7 +3,7 @@
 </p>
 <h1 align="center"><a href="https://mondal10.github.io/personal-voice-assistant/">Personal Voice Assistant</a></h1>
 
-A self learning project to implement Webpack and Browser's Speech Recognition for Text to Speech conversion.
+A self learning project to implement Webpack and Browser's Speech Recognition for Speech to Text conversion.
 
 ## Objective
 - Configuring Webpack for different environments(dev, prod).
